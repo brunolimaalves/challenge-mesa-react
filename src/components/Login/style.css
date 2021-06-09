@@ -1,0 +1,13 @@
+.title__page {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.8rem;
+    
+}
+
+.box__login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
