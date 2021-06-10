@@ -8,3 +8,6 @@ Implementar uma aplicação web (Front-end) que mostre os locais mais próximos 
 
 <br>
 <br>
+
+Run App: yarn dev <br>
+Run Build: yarn run build
