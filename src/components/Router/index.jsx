@@ -4,7 +4,7 @@ import Home from '../Home'
 import Login from '../Login'
 import Profile from '../Profile'
 import PlacesMap from '../Map'
-import { useAuthDataContext } from "../helpers/AuthProvider";
+import { useAuthDataContext } from "../context/AuthProvider";
 import MainLayout from '../Layout'
 
 

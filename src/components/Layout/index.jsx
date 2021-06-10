@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom';
-import { useAuthDataContext } from "../helpers/AuthProvider";
+import { useAuthDataContext } from "../context/AuthProvider";
 
 const { Header, Content, Footer, Sider } = Layout;
 

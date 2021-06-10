@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout, Form, Input, Button, Row, Col, message } from 'antd'
 import './style.css'
-import { useAuthDataContext } from "../helpers/AuthProvider";
+import { useAuthDataContext } from "../context/AuthProvider";
 import Register from './register'
 import axios from 'axios'
 
