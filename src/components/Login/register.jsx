@@ -22,10 +22,9 @@ const Register = (  ) => {
         user, 
         { headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } }
     ).then( response => {
-        console.log(response)
+        message.success('Registration Successful!');
     }).catch( error => {
         message.error(error.response.data.error);
-        console.log(error.response.data.error)
     })
     
     return (

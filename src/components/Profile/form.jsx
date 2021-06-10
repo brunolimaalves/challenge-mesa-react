@@ -19,7 +19,7 @@ const layout = {
 
   
 
-  const onFinish = (values) =>  save(values)
+const onFinish = (values) =>  save(values)
 
   
 const FormProfile = ( {profile} ) => { 
@@ -73,13 +73,12 @@ const FormProfile = ( {profile} ) => {
         >
             <Input placeholder="E-mail" />
         </Form.Item>
-
-                <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
-                        Save
-                    </Button>
-                </Form.Item>
-            </Form>
+        <Form.Item {...tailLayout}>
+            <Button type="primary" htmlType="submit">
+                Save
+            </Button>
+        </Form.Item>
+    </Form>
 )}
 
 export default FormProfile;

@@ -31,13 +31,7 @@ import {
     const getPlaces =  async (lat, lng) => {
         
         const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=2500&type=restaurant&keyword=cruise&key=AIzaSyCxwVdmWGVpYd9gaJhvkcvT39Cz7ovGMQQ`
-
-        axios.get(url , {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        }).then( data => console.log(data) )
+        axios.get(url).then( data => console.log(data) )
     }
 
     useEffect( ( ) => {
@@ -81,7 +75,8 @@ import {
     const renderMap = () => {
       return (
           <GoogleMap
-            onLoad={loadHandler}
+            defaul
+            //onLoad={loadHandler}
             center={ center }
             zoom={zoom}
             mapContainerStyle={{ height: "100vh", width: "100%" }}
@@ -97,8 +92,8 @@ import {
                         key={place.id}
                         position={place.pos}
                         center={ place.pos }
-                        onLoad={marker => markerLoadHandler(marker, place)}
-                        onClick={event => markerClickHandler(event, place)}
+                        //onLoad={marker => markerLoadHandler(marker, place)}
+                        //onClick={event => markerClickHandler(event, place)}
                         icon={{
                         path: place.id === 'I`m here!' ? homeMarker : placeMarker,
                         fillColor: "#000",

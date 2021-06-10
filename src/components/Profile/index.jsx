@@ -26,7 +26,6 @@ const Profile = () => {
         .then( response => {
             setEditing(false)
             const { data } = response.data
-            console.log(data)
             setProfile(data)
         }).catch( error => {
             message.error('User not found!');
@@ -56,7 +55,7 @@ const Profile = () => {
                             renderItem={item => (
                                 <List.Item>
                                     <List.Item.Meta
-                                    title={<a href="https://ant.design">{item.title}</a>}
+                                    title={item.title}
                                     description={item.description}
                                     />
                                 </List.Item>
