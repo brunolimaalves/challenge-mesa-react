@@ -1,6 +1,6 @@
 import React, {useEffect, useState, createContext, useContext} from "react";
-import { Switch ,BrowserRouter } from 'react-router-dom'
-import AuthDataProvider from "./components/helpers/AuthProvider";
+import { BrowserRouter } from 'react-router-dom'
+import AuthDataProvider from "./components/context/AuthProvider";
 import Router from './components/Router'
 
 export default function App(props) {
